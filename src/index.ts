@@ -1,11 +1,14 @@
-import { instance as teste } from './teste'
-import express from 'express'
+export class Teste {
+    id = "testeId"
+    name = "nameId"
 
-const app = express()
-app.use(express.json())
-const router = express.Router()
-router.get('/', teste.fazNada.bind(teste))
+    async fazNada() {
+        console.log("fez nada. Dahora");
+        console.log("this.id:")
+        console.log(this.id)
+        console.log("this.name:")
+        console.log(this.name)
+    }
+}
 
-app.use("/teste", router)
-
-app.listen(3333, () => console.log('Rodando safas'))
+export const instance = new Teste()
