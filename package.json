@@ -1,6 +1,6 @@
 {
   "name": "teste-npm-ts",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Test npm using ts. Do not use it",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
